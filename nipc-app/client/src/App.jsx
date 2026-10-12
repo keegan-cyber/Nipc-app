@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import NipcCharts from "./NipcCharts.jsx";
 
+
 const API_URL = "http://localhost:4000";
 
 export default function App() {
@@ -127,11 +128,14 @@ async function updateTable() {
 return (
   <main>
     <header>
-      <div className="container">
-        <p className = "institution"> INSTAT Madagascar</p>
-        <h1>Indice des prix a la consommation</h1>
-        <h2> depuis janvier 2016</h2>
-        <p className="subtitle">(Base 100 : moyenne de l'annee 2016)</p>
+      <img src= "/Logo-INSTAT.png" alt="Logo INSTAT" className="logo"/>
+      <div className="container header-content">
+        <div className="header-text">
+          <p className = "institution"> INSTAT Madagascar</p>
+          <h1>Indice des prix a la consommation</h1>
+          <h2> depuis janvier 2016</h2>
+          <p className="subtitle">(Base 100 : moyenne de l'annee 2016)</p>
+        </div>
       </div>
     </header>
     <section className="container">
